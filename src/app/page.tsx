@@ -1,5 +1,5 @@
 // app/page.tsx
-import React from 'react';
+import React from "react";
 // Interface untuk data dummy
 interface PengajuanCuti {
   no: number;
@@ -11,11 +11,11 @@ interface PengajuanCuti {
 const Home: React.FC = () => {
   // Data dummy untuk tabel
   const dataDummy: PengajuanCuti[] = [
-    { no: 1, nama: 'John Doe', jabatan: 'Manager', divisi: 'HRD' },
-    { no: 2, nama: 'Jane Smith', jabatan: 'Staff', divisi: 'Marketing' },
-    { no: 3, nama: 'Alice Johnson', jabatan: 'Supervisor', divisi: 'IT' },
-    { no: 4, nama: 'Bob Brown', jabatan: 'Analyst', divisi: 'Finance' },
-    { no: 5, nama: 'Charlie Davis', jabatan: 'Developer', divisi: 'IT' },
+    { no: 1, nama: "John Doe", jabatan: "Manager", divisi: "HRD" },
+    { no: 2, nama: "Jane Smith", jabatan: "Staff", divisi: "Marketing" },
+    { no: 3, nama: "Alice Johnson", jabatan: "Supervisor", divisi: "IT" },
+    { no: 4, nama: "Bob Brown", jabatan: "Analyst", divisi: "Finance" },
+    { no: 5, nama: "Charlie Davis", jabatan: "Developer", divisi: "IT" },
   ];
 
   return (
@@ -46,7 +46,9 @@ const Home: React.FC = () => {
 
       {/* Tabel Data Pengajuan Cuti */}
       <div className="bg-white p-6 rounded-lg shadow-md">
-        <h2 className="text-xl font-bold text-gray-800 mb-4">Data Pengajuan Cuti</h2>
+        <h2 className="text-xl font-bold text-gray-800 mb-4">
+          Data Pengajuan Cuti
+        </h2>
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-50">
             <tr>
@@ -67,14 +69,130 @@ const Home: React.FC = () => {
           <tbody className="bg-white divide-y divide-gray-200">
             {dataDummy.map((item) => (
               <tr key={item.no}>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{item.no}</td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{item.nama}</td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{item.jabatan}</td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{item.divisi}</td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                  {item.no}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                  {item.nama}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                  {item.jabatan}
+                </td>
+                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                  {item.divisi}
+                </td>
               </tr>
             ))}
           </tbody>
         </table>
+      </div>
+
+      {/* Chart Section */}
+      <div className="bg-white rounded-lg shadow-md p-6">
+        <h2 className="text-xl font-semibold text-gray-800 mb-4">
+          Grafik Pengajuan Cuti
+        </h2>
+        <div className="relative h-64">
+          {/* Simulasi Grafik Batang */}
+          <svg className="w-full h-full" viewBox="0 0 400 200">
+            {/* Garis Horizontal (Axis) */}
+            <line
+              x1="0"
+              y1="180"
+              x2="400"
+              y2="180"
+              stroke="#e5e7eb"
+              strokeWidth="2"
+            ></line>
+            {/* Batang Data */}
+            <rect
+              x="30"
+              y="120"
+              width="40"
+              height="60"
+              fill="#10b981"
+            ></rect>{" "}
+            {/* Jan */}
+            <rect
+              x="110"
+              y="80"
+              width="40"
+              height="100"
+              fill="#3b82f6"
+            ></rect>{" "}
+            {/* Feb */}
+            <rect
+              x="190"
+              y="150"
+              width="40"
+              height="30"
+              fill="#f59e0b"
+            ></rect>{" "}
+            {/* Mar */}
+            <rect
+              x="270"
+              y="100"
+              width="40"
+              height="80"
+              fill="#ef4444"
+            ></rect>{" "}
+            {/* Apr */}
+            <rect
+              x="350"
+              y="60"
+              width="40"
+              height="120"
+              fill="#8b5cf6"
+            ></rect>{" "}
+            {/* May */}
+            {/* Label Data */}
+            <text
+              x="50"
+              y="195"
+              fontSize="10"
+              textAnchor="middle"
+              fill="#6b7280"
+            >
+              Jan
+            </text>
+            <text
+              x="130"
+              y="195"
+              fontSize="10"
+              textAnchor="middle"
+              fill="#6b7280"
+            >
+              Feb
+            </text>
+            <text
+              x="210"
+              y="195"
+              fontSize="10"
+              textAnchor="middle"
+              fill="#6b7280"
+            >
+              Mar
+            </text>
+            <text
+              x="290"
+              y="195"
+              fontSize="10"
+              textAnchor="middle"
+              fill="#6b7280"
+            >
+              Apr
+            </text>
+            <text
+              x="370"
+              y="195"
+              fontSize="10"
+              textAnchor="middle"
+              fill="#6b7280"
+            >
+              May
+            </text>
+          </svg>
+        </div>
       </div>
     </div>
   );
