@@ -1,0 +1,62 @@
+[
+    {
+      "id": 1,
+      "name": "Aisyah Siti Zahra",
+      "nip": "123456",
+      "position": "Software Engineer",
+      "department": "IT",
+      "leaveType": "Cuti Tahunan",
+      "startDate": "2025-03-15",
+      "endDate": "2025-03-20",
+      "reason": "Liburan keluarga",
+      "status": "Disetujui"
+    },
+    {
+      "id": 2,
+      "name": "Budi Santoso",
+      "nip": "654321",
+      "position": "HR Manager",
+      "department": "HR",
+      "leaveType": "Cuti Sakit",
+      "startDate": "2025-04-10",
+      "endDate": "2025-04-12",
+      "reason": "Pemulihan setelah operasi",
+      "status": "Menunggu Persetujuan"
+    },
+    {
+      "id": 3,
+      "name": "Siti Aminah",
+      "nip": "789012",
+      "position": "Finance Analyst",
+      "department": "Finance",
+      "leaveType": "Cuti Melahirkan",
+      "startDate": "2025-05-01",
+      "endDate": "2025-07-30",
+      "reason": "Melahirkan anak pertama",
+      "status": "Disetujui"
+    },
+    {
+      "id": 4,
+      "name": "Doni Pratama",
+      "nip": "345678",
+      "position": "Marketing Specialist",
+      "department": "Marketing",
+      "leaveType": "Cuti Besar",
+      "startDate": "2025-06-15",
+      "endDate": "2025-07-15",
+      "reason": "Ibadah Umroh",
+      "status": "Ditolak"
+    },
+    {
+      "id": 5,
+      "name": "Rina Permata",
+      "nip": "567890",
+      "position": "Data Analyst",
+      "department": "IT",
+      "leaveType": "Cuti Tahunan",
+      "startDate": "2025-08-05",
+      "endDate": "2025-08-10",
+      "reason": "Pulang kampung",
+      "status": "Menunggu Persetujuan"
+    }
+  ]

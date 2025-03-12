@@ -88,7 +88,9 @@ export default function UsersPage() {
   };
 
   return (
-    <div style={{ marginTop: "20px", paddingLeft: "80px", paddingRight: "80px" }}>
+    <div
+      style={{ marginTop: "20px", paddingLeft: "80px", paddingRight: "80px" }}
+    >
       <h1>Daftar Pengguna</h1>
 
       <div style={{ marginBottom: "20px", display: "flex", gap: "10px" }}>

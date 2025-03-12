@@ -1,5 +1,5 @@
-"use client"
-import React, { useState } from 'react';
+"use client";
+import React, { useState } from "react";
 
 const Navbar = () => {
   const [isMasterMenuOpen, setIsMasterMenuOpen] = useState(false);
@@ -54,18 +54,15 @@ const Navbar = () => {
                     >
                       Pegawai
                     </a>
+                    <a
+                      href="/master/cuti"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    >
+                      Cuti
+                    </a>
                   </div>
                 )}
               </div>
-
-              {/* Cuti */}
-              <a
-                href="/cuti"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Cuti
-              </a>
-
               {/* Pengajuan Cuti */}
               <a
                 href="/pengajuan-cuti"
